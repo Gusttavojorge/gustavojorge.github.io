@@ -5,7 +5,8 @@
     font-family: "Roboto", sans-serif;
 }
 ion-icon {
-    font-size: 300px;
+    font-size: 64px;
+    color: black;
 }
 
 i {
