@@ -16,6 +16,7 @@
 
   <body>
     <main id="container">
+      <!--Conteiner BIO-->
       <aside id="bio-container">
         <h2>Gustavo Jorge</h2>
 
@@ -65,12 +66,26 @@
           <a
             class="email-btn"
             target="_blank"
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=ceogusttavojorgge@gmail.com&su=Contato%20via%20Portfólio&body=Olá%20Gustavo,%0D%0AVi%20seu%20portfólio%20e%20gostaria%20de%20entrar%20em%20contato%20para%20saber%20mais%20sobre%20seu%20trabalho%20e%20possíveis%20oportunidades.%0D%0A%0D%0AAtenciosamente,%0D%0A[Seu%20nome]">
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=ceogusttavojorgge@gmail.com&su=Contato%20via%20Portfólio&body=Olá%20Gustavo,%0D%0AVi%20seu%20portfólio%20e%20gostaria%20de%20entrar%20em%20contato%20para%20saber%20mais%20sobre%20seu%20trabalho%20e%20possíveis%20oportunidades.%0D%0A%0D%0AAtenciosamente,%0D%0A[Seu%20nome]"
+          >
             Enviar e-mail<ion-icon name="send-outline"></ion-icon>
           </a>
         </div>
       </aside>
 
+      <!--Crie uma barra compacta que fica fixa no topo em tablet.-->
+      <div class="bio-topbar">
+        <img id="bio-image-mini" src="img/FotoPerfil.jpg" alt="Foto de Gustavo Jorge" />
+        <h2 class="bio-name-mini">Gustavo Jorge</h2>
+        <ul class="social-mini">
+          <li><a href="https://www.facebook.com/profile.php?id=100008161783537" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="https://www.instagram.com/gusttavojorgge/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="https://www.linkedin.com/in/gustavo-jorge-milhomem/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        </ul>
+      </div>
+
+
+      <!--Conteudo principal-->
       <section id="about-container">
         <h1 id="name">Gustavo Jorge Milhomem de Oliveira</h1>
 
@@ -98,9 +113,11 @@
         </p>
         <p class="description">Explorar meus repositórios:</p>
 
-        <a id="btn-projects"
+        <a
+          id="btn-projects"
           href="https://github.com/Gusttavojorge"
-          target="_blank">
+          target="_blank"
+        >
           <ion-icon name="logo-github"></ion-icon><span>Ver Projetos</span>
         </a>
 
@@ -154,11 +171,11 @@
     <!--Ion Icon-->
     <script
       type="module"
-      src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js">
-    </script>
+      src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"
+    ></script>
     <script
       nomodule
-      src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js">
-    </script>
+      src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
