@@ -1,97 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR"> 
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portifólio Gustavo Jorge</title>
-    <!-- CSS do projeto-->
+    <title>Portfólio Gustavo Jorge</title> 
+
+    <!-- CSS do projeto -->
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- Dev Icon-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
+
+    <!-- Devicon (ícones de tecnologias) -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+
   </head>
 
   <body>
+    <!-- container principal do layout -->
     <main id="container">
-      <!--Conteiner BIO-->
-      <aside id="bio-container">
+
+      <!-- Sidebar fixa no desktop (bio) -->
+      <aside id="bio-container" aria-label="Informações de perfil">
         <h2>Gustavo Jorge</h2>
 
-        <img
-          id="bio-image"
-          src="img/FotoPerfil.jpg"
-          alt="Foto de Gustavo Jorge"
-        />
+        <!-- Imagem  -->
+        <img id="bio-image" src="img/FotoPerfil.jpg" alt="Foto de Gustavo Jorge" loading="lazy"/>
 
         <p>
-          Olá meu nome é Gustavo Jorge e sou
-          <span class="highlight">programador Full-Satck</span>.
+          Olá, meu nome é Gustavo Jorge e sou
+          <span class="highlight">programador Full-Stack</span>. 
         </p>
         <p id="Welcome-text">Seja bem-vindo!</p>
 
-        <ul id="social-container">
+        <!-- Redes sociais (sidebar) -->
+        <ul id="social-container" aria-label="Redes sociais">
           <li>
-            <a
-              href="https://www.facebook.com/profile.php?id=100008161783537"
-              target="_blank"
-              ><ion-icon name="logo-facebook"></ion-icon
-            ></a>
+            <a href="https://www.facebook.com/profile.php?id=100008161783537" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/gusttavojorgge/" target="_blank"
-              ><ion-icon name="logo-instagram"></ion-icon
-            ></a>
+            <a href="https://www.instagram.com/gusttavojorgge/"  target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
           </li>
           <li>
-            <a
-              href="https://www.linkedin.com/in/gustavo-jorge-milhomem/"
-              target="_blank"
-              ><ion-icon name="logo-linkedin"></ion-icon
-            ></a>
+            <a href="https://www.linkedin.com/in/gustavo-jorge-milhomem/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" >
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
           </li>
         </ul>
 
+        <!-- Bloco do e-mail: link mailto + atalho gmail -->
         <div id="email-container">
           <p>
-            <ion-icon name="mail-outline"></ion-icon>
-            Email:
-            <a href="mailto:ceogusttavojorgge@gmail.com"
-              >ceogusttavojorgge@gmail.com</a
-            >
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            <span>Email:</span>
+            <a href="mailto:ceogusttavojorgge@gmail.com">ceogusttavojorgge@gmail.com</a>
           </p>
 
-          <a
-            class="email-btn"
-            target="_blank"
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=ceogusttavojorgge@gmail.com&su=Contato%20via%20Portfólio&body=Olá%20Gustavo,%0D%0AVi%20seu%20portfólio%20e%20gostaria%20de%20entrar%20em%20contato%20para%20saber%20mais%20sobre%20seu%20trabalho%20e%20possíveis%20oportunidades.%0D%0A%0D%0AAtenciosamente,%0D%0A[Seu%20nome]"
-          >
-            Enviar e-mail<ion-icon name="send-outline"></ion-icon>
+          <a class="email-btn" target="_blank" rel="noopener noreferrer"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=ceogusttavojorgge@gmail.com&su=Contato%20via%20Portfólio&body=Olá%20Gustavo,%0D%0AVi%20seu%20portfólio%20e%20gostaria%20de%20entrar%20em%20contato%20para%20saber%20mais%20sobre%20seu%20trabalho%20e%20possíveis%20oportunidades.%0D%0A%0D%0AAtenciosamente,%0D%0A[Seu%20nome]">
+            Enviar e-mail <ion-icon name="send-outline" aria-hidden="true"></ion-icon>
           </a>
         </div>
       </aside>
 
-      <!--Crie uma barra compacta que fica fixa no topo em tablet.-->
-      <div class="bio-topbar">
-        <img id="bio-image-mini" src="img/FotoPerfil.jpg" alt="Foto de Gustavo Jorge" />
+      <!-- Topbar compacta exibida em tablet/mobile -->
+      <div class="bio-topbar" role="navigation" aria-label="Barra superior">
+
+        <img id="bio-image-mini" src="img/FotoPerfil.jpg" alt="Foto de Gustavo Jorge" loading="lazy" />
+
         <h2 class="bio-name-mini">Gustavo Jorge</h2>
-        <ul class="social-mini">
-          <li><a href="https://www.facebook.com/profile.php?id=100008161783537" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
-          <li><a href="https://www.instagram.com/gusttavojorgge/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a></li>
-          <li><a href="https://www.linkedin.com/in/gustavo-jorge-milhomem/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+
+        <ul class="social-mini" aria-label="Redes sociais">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100008161783537" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/gusttavojorgge/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <ion-icon name="logo-instagram"></ion-icon> 
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/gustavo-jorge-milhomem/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"> 
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
         </ul>
       </div>
 
-
-      <!--Conteudo principal-->
-      <section id="about-container">
+      <!-- Conteúdo principal -->
+      <section id="about-container" aria-label="Sobre">
         <h1 id="name">Gustavo Jorge Milhomem de Oliveira</h1>
 
-        <p id="title">
-          <span class="highlight">Desenvolvedor Full-Satck</span>
-        </p>
+        <p id="title"><span class="highlight">Desenvolvedor Full-Stack</span></p>
+
+        <!-- textos descritivos -->
         <p class="description">
           Sou um desenvolvedor em início de carreira, atualmente cursando
           <span class="highlight">Análise e Desenvolvimento de Sistemas</span>.
@@ -111,71 +116,63 @@
           eu possa aprender com profissionais mais experientes, contribuir com
           dedicação e desenvolver soluções que gerem impacto positivo.
         </p>
-        <p class="description">Explorar meus repositórios:</p>
 
-        <a
-          id="btn-projects"
-          href="https://github.com/Gusttavojorge"
-          target="_blank"
-        >
-          <ion-icon name="logo-github"></ion-icon><span>Ver Projetos</span>
+        <!-- CTA para GitHub -->
+        <p class="description">Explorar meus repositórios:</p>
+        <a id="btn-projects" href="https://github.com/Gusttavojorge" target="_blank"  rel="noopener noreferrer" >
+          <ion-icon name="logo-github" aria-hidden="true"></ion-icon><span>Ver Projetos</span>
         </a>
 
+        <!-- Seção de Skills -->
         <h2 id="Skills-section-title">Minhas Skills</h2>
-
         <p class="description">Conheça as tecnologias que atuo:</p>
 
+        <!-- IMPORTANTE: trocado para classe .skills-box (evita IDs duplicados) -->
         <div id="skills-container">
-          <div id="skills-box">
+          <div class="skills-box">
             <p class="skills-title">Front-End</p>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-javascript-plain colored" aria-label="JavaScript"></i>
+            <i class="devicon-html5-plain colored" aria-label="HTML5"></i>
+            <i class="devicon-css3-plain colored" aria-label="CSS3"></i>
           </div>
 
-          <div id="skills-box">
+          <div class="skills-box">
             <p class="skills-title">Back-End</p>
-            <i class="devicon-java-plain-wordmark colored"></i>
-            <i class="devicon-python-plain-wordmark colored"></i>
-            <i class="devicon-php-plain colored"></i>
+            <i class="devicon-java-plain-wordmark colored" aria-label="Java"></i>
+            <i class="devicon-python-plain-wordmark colored" aria-label="Python"></i>
+            <i class="devicon-php-plain colored" aria-label="PHP"></i>
           </div>
 
-          <div id="skills-box">
+          <div class="skills-box">
             <p class="skills-title">Databases</p>
-            <i class="devicon-postgresql-plain-wordmark colored"></i>
-            <i class="devicon-mongodb-plain-wordmark colored"></i>
-            <i class="devicon-mysql-plain-wordmark colored"></i>
+            <i class="devicon-postgresql-plain-wordmark colored" aria-label="PostgreSQL"></i>
+            <i class="devicon-mongodb-plain-wordmark colored" aria-label="MongoDB"></i>
+            <i class="devicon-mysql-plain-wordmark colored" aria-label="MySQL"></i>
           </div>
 
-          <div id="skills-box">
+          <div class="skills-box">
             <p class="skills-title">Front-End Frameworks</p>
-            <i class="devicon-react-original-wordmark colored"></i>
-            <i class="devicon-vuejs-plain-wordmark colored"></i>
+            <i class="devicon-react-original-wordmark colored" aria-label="React"></i>
+            <i class="devicon-vuejs-plain-wordmark colored" aria-label="Vue.js"></i>
           </div>
 
-          <div id="skills-box">
+          <div class="skills-box">
             <p class="skills-title">Back-End Frameworks</p>
-            <i class="devicon-laravel-original-wordmark colored"></i>
-            <i class="devicon-django-plain-wordmark colored"></i>
+            <i class="devicon-laravel-original-wordmark colored" aria-label="Laravel"></i>
+            <i class="devicon-django-plain-wordmark colored" aria-label="Django"></i>
           </div>
 
-          <div id="skills-box">
+          <div class="skills-box">
             <p class="skills-title">Tools</p>
-            <i class="devicon-docker-plain-wordmark colored"></i>
-            <i class="devicon-linux-plain"></i>
+            <i class="devicon-docker-plain-wordmark colored" aria-label="Docker"></i>
+            <i class="devicon-linux-plain" aria-label="Linux"></i>
           </div>
         </div>
       </section>
     </main>
 
-    <!--Ion Icon-->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"
-    ></script>
+    <!-- Ionicons (módulo e fallback) -->
+    <script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"  ></script>
+    <script  nomodule  src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js" ></script>
   </body>
 </html>
